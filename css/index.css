@@ -1,0 +1,155 @@
+
+body{
+    color: var(--gray6);
+}
+
+#user-search-form .textfield{
+    max-width: 240px;
+    margin: 8px 8px 8px auto;
+
+}
+
+main{
+    position: relative;
+    box-sizing: border-box;
+    min-height: calc(100vh - 70px);
+    max-width: 992px;
+    padding: 12px 12px;
+    margin: auto;
+}
+
+/* User Profile */
+#user-profile{
+    display: flex;
+    align-items: center;
+}
+
+#user-avatar{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.user-info{
+    margin: 0 20px;
+    color: var(--gray5);
+    font-size: 0.9em;
+    /* line-height: 1.2em; */
+}
+
+.user-info p{
+    margin: 0.6em 0;
+}
+
+#user-name{
+    font-size: 1.9em;
+    color: var(--gray6);
+}
+
+/* User Repositories */
+#repositories-container{
+    position: relative;
+    min-height: calc(100vh - 350px);
+    margin: 24px 0 24px;
+}
+.repositories-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.repository{
+    box-sizing: border-box;
+    padding: 0 16px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--gray2);
+}
+
+.repository__name{
+    font-size: 1.3em;
+    line-height: 0.5em;
+}
+
+.repository__description{
+    color: var(--gray5);
+    font-size: 0.8em;
+}
+
+.repository__topics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.repository__topics span{
+    background-color: var(--transparent3);
+    max-width: 140px;
+    font-size: 0.8em;
+    padding: 4px 12px;
+    margin: 2px 4px 2px 0;
+    border-radius: 100px;
+}
+
+
+/* Respository Pagination */
+#pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+#select-items-count{
+    border: 1px solid var(--gray2);
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+#select-items-count:focus{
+    outline: none;
+}
+
+#select-items-count:hover{
+    background-color: var(--transparent1);
+}
+
+#select-items-count option{
+    background-color: white;
+}
+
+.page-count{
+
+}
+
+.page-count span{
+    display: inline-block;
+    text-align: center;
+    min-width: 14px;
+    margin: 2px 1px;
+    padding: 4px 8px;
+    border: 1px solid var(--gray2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-count .selected{
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: white;
+}
+
+/* $MEDIA_XS: 576px;
+$MEDIA_SM: 767px;
+$MEDIA_MD: 992px;
+$MEDIA_LG: 1200px;
+$MEDIA_XL: 1600px;
+
+$MEDIA_SCREEN_BELOW_XS: 'only screen and (max-width: #{$MEDIA_XS})';
+$MEDIA_SCREEN_XS_TO_SM: 'only screen and (min-width: #{$MEDIA_XS}) and (max-width: #{$MEDIA_SM})';
+$MEDIA_SCREEN_SM_TO_MD: 'only screen and (min-width: #{$MEDIA_SM}) and (max-width: #{$MEDIA_MD})';
+$MEDIA_SCREEN_MD_TO_LG: 'only screen and (min-width: #{$MEDIA_MD}) and (max-width: #{$MEDIA_LG})';
+$MEDIA_SCREEN_ABOVE_LG: 'only screen and (min-width: #{$MEDIA_LG})';
+
+$MEDIA_SCREEN_BELOW_SM: 'only screen and (max-width: #{$MEDIA_SM})';
+$MEDIA_SCREEN_BELOW_MD: 'only screen and (max-width: #{$MEDIA_MD})';
+$MEDIA_SCREEN_BELOW_LG: 'only screen and (max-width: #{$MEDIA_LG})';
+$MEDIA_SCREEN_BELOW_XL: 'only screen and (max-width: #{$MEDIA_XL})'; */
