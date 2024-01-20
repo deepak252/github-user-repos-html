@@ -14,7 +14,7 @@ main{
     box-sizing: border-box;
     min-height: calc(100vh - 70px);
     max-width: 992px;
-    padding: 12px 12px;
+    padding: 12px 12px 24px;
     margin: auto;
 }
 
@@ -48,38 +48,38 @@ main{
 }
 
 /* User Repositories */
-#repositories-container{
+#repos-container{
     position: relative;
     min-height: calc(100vh - 350px);
     margin: 24px 0 24px;
 }
-.repositories-list{
+#repos-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
-.repository{
+.repo{
     box-sizing: border-box;
     padding: 0 16px 12px;
     border-radius: 12px;
     border: 1px solid var(--gray2);
 }
 
-.repository__name{
+.repo__name{
     font-size: 1.3em;
     line-height: 0.5em;
 }
 
-.repository__description{
+.repo__description{
     color: var(--gray5);
     font-size: 0.8em;
 }
 
-.repository__topics{
+.repo__topics{
     display: flex;
     flex-wrap: wrap;
 }
-.repository__topics span{
+.repo__topics span{
     background-color: var(--transparent3);
     max-width: 140px;
     font-size: 0.8em;
@@ -95,7 +95,7 @@ main{
     justify-content: space-between;
     align-items: start;
 }
-#select-items-count{
+#page-size-dropdown{
     border: 1px solid var(--gray2);
     padding: 8px 12px;
     background-color: white;
@@ -104,15 +104,15 @@ main{
     margin-right: 12px;
 }
 
-#select-items-count:focus{
+#page-size-dropdown:focus{
     outline: none;
 }
 
-#select-items-count:hover{
+#page-size-dropdown:hover{
     background-color: var(--transparent1);
 }
 
-#select-items-count option{
+#page-size-dropdown option{
     background-color: white;
 }
 
@@ -136,6 +136,12 @@ main{
     background-color: var(--primary);
     color: white;
 }
+
+.page-count .disabled{
+    background-color: var(--transparent2);
+    cursor:default;
+}
+
 
 /* $MEDIA_XS: 576px;
 $MEDIA_SM: 767px;

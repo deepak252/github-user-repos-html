@@ -100,7 +100,7 @@
     overflow: hidden;
     position: relative;
     background-color: var(--gray1);
-    border-radius: 50%;
+    border-radius: 12px;
     height: 50px;
     width: 50px;
 }
