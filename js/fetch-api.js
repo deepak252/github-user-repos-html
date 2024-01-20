@@ -112,7 +112,7 @@ async function fetchRepositories() {
   }
 }
 
-// fetchUserProfile();
+fetchUserProfile();
 
 (()=>{
   window.addEventListener("popstate", function (event) {
