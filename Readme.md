@@ -1,0 +1,1 @@
+Page no. will be 10 if pageNo not in [10,20,50,100]

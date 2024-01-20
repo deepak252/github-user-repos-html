@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script defer src="js/utils.js" ></script>
-    <script defer src="js/fetch-repositories.js" ></script>
+    <script defer src="js/ui-helpers.js" ></script>
+    <script defer src="js/fetch-api.js" ></script>
+    <script defer src="js/event-handlers.js" ></script>
   </head>
   <body>
     <header>
+      <!-- <div id="home-title">
+        <h2 style="text-align: center;">Github User Repositories</h2>
+      </div> -->
       <form id="user-search-form">
         <div class="textfield">
           <input id="user-search-input" type="search" placeholder="Search user"/>
@@ -29,7 +34,7 @@
         </div>
       </div>
 
-      <div id="pagination">
+      <div id="pagination" style="display:none;">
         <div class="items-per-page">
           <select id="page-size-dropdown">
             <option value="10">10 / Page</option>
@@ -41,7 +46,6 @@
         <div id="page-counter" class="page-count disable-select">
         </div>
       </div>
-  
     </main>
   </body>
 

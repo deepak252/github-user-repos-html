@@ -2,11 +2,14 @@
 body{
     color: var(--gray6);
 }
+header{
+    box-sizing: border-box;
+    padding: 4px 8px;
+}
 
 #user-search-form .textfield{
     max-width: 240px;
-    margin: 8px 8px 8px auto;
-
+    margin-left: auto;
 }
 
 main{
@@ -35,16 +38,29 @@ main{
     margin: 0 20px;
     color: var(--gray5);
     font-size: 0.9em;
-    /* line-height: 1.2em; */
 }
 
-.user-info p{
-    margin: 0.6em 0;
+.user-info p,a{
+    margin: 0.3em 0;
 }
 
 #user-name{
-    font-size: 1.9em;
+    font-size: 1.8em;
     color: var(--gray6);
+}
+
+.icon-label{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.icon-label img{
+    margin-right: 12px;
+    height: 16px;
+    width: 16px;
+}
+.icon-label a{
+    text-decoration: none;
 }
 
 /* User Repositories */
@@ -60,19 +76,22 @@ main{
 }
 .repo{
     box-sizing: border-box;
-    padding: 0 16px 12px;
+    padding: 12px 16px 8px;
     border-radius: 12px;
     border: 1px solid var(--gray2);
+    overflow: hidden;
 }
 
 .repo__name{
-    font-size: 1.3em;
-    line-height: 0.5em;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0;
 }
 
 .repo__description{
     color: var(--gray5);
     font-size: 0.8em;
+    margin: 0.5em 0;
 }
 
 .repo__topics{
@@ -84,10 +103,9 @@ main{
     max-width: 140px;
     font-size: 0.8em;
     padding: 4px 12px;
-    margin: 2px 4px 2px 0;
+    margin: 2px 4px 4px 0;
     border-radius: 100px;
 }
-
 
 /* Respository Pagination */
 #pagination{
@@ -116,10 +134,6 @@ main{
     background-color: white;
 }
 
-.page-count{
-
-}
-
 .page-count span{
     display: inline-block;
     text-align: center;
@@ -143,19 +157,20 @@ main{
 }
 
 
-/* $MEDIA_XS: 576px;
-$MEDIA_SM: 767px;
-$MEDIA_MD: 992px;
-$MEDIA_LG: 1200px;
-$MEDIA_XL: 1600px;
+@media  only screen and (max-width: 640px){
+    #user-profile{
+        flex-direction: column;
+        text-align: center;
+    }
 
-$MEDIA_SCREEN_BELOW_XS: 'only screen and (max-width: #{$MEDIA_XS})';
-$MEDIA_SCREEN_XS_TO_SM: 'only screen and (min-width: #{$MEDIA_XS}) and (max-width: #{$MEDIA_SM})';
-$MEDIA_SCREEN_SM_TO_MD: 'only screen and (min-width: #{$MEDIA_SM}) and (max-width: #{$MEDIA_MD})';
-$MEDIA_SCREEN_MD_TO_LG: 'only screen and (min-width: #{$MEDIA_MD}) and (max-width: #{$MEDIA_LG})';
-$MEDIA_SCREEN_ABOVE_LG: 'only screen and (min-width: #{$MEDIA_LG})';
+    #user-avatar{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 12px;
+    }
 
-$MEDIA_SCREEN_BELOW_SM: 'only screen and (max-width: #{$MEDIA_SM})';
-$MEDIA_SCREEN_BELOW_MD: 'only screen and (max-width: #{$MEDIA_MD})';
-$MEDIA_SCREEN_BELOW_LG: 'only screen and (max-width: #{$MEDIA_LG})';
-$MEDIA_SCREEN_BELOW_XL: 'only screen and (max-width: #{$MEDIA_XL})'; */
+    #repos-list{
+        grid-template-columns: auto;
+    }
+}
