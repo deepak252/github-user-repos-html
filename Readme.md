@@ -1,4 +1,3 @@
-<!-- Page no. will be 10 if pageNo not in [10,20,50,100] -->
 # Github User Repositories Website
 
 A web application to explore GitHub user profiles and repositories, created with HTML, CSS and Javascript.
@@ -21,7 +20,7 @@ A web application to explore GitHub user profiles and repositories, created with
 
 ## Demo
 
-Live Demo - https://github-user-repositories.vercel.app/deepak252
+Live Demo - https://github-user-repositories.vercel.app/?username=deepak252
 
 ## Getting Started
 
